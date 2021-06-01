@@ -1,0 +1,124 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/* Hero */
+.hero_container{
+    width: 100%;
+    height: 300px;
+    background-image: url('../imagenes/contacto/hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Work us */
+.contact{
+    width: 100%;
+    height: auto;
+    background-color: #eceff1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+    .contact .contact-title{
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        color: #0e4b9c;
+        font-family: 'Proxima-Nova-SemiBold';
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .contact .contact-contact-container{
+        width: 80%;
+        height: auto;
+        display: flex;
+    }
+    .contact .contact-contact-container .contact-description{
+        font-family: 'Proxima-Nova-Regular';
+        width: 50%;
+        text-align: justify;
+        font-size: 16px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+    }
+    .contact .contact-contact-container .contact-form-container{
+        width: 50%;
+        height: auto;
+        padding: 0 30px;
+    }
+        .contact .contact-contact-container .contact-form-container .contact-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .contact .contact-contact-container .contact-form-container .contact-form .box-container{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact .contact-contact-container .contact-form-container .contact-form #button-container{
+            display: flex;
+            justify-content: center;
+        }
+            .contact .contact-contact-container .contact-form-container .contact-form .box-container.short{
+                width: 48%;
+            }
+            .contact .contact-contact-container .contact-form-container .contact-form label h2{
+                color: #505050;
+                font-family: 'Proxima-Nova-Regular';
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .contact .contact-contact-container .contact-form-container .contact-form label input,
+            .contact .contact-contact-container .contact-form-container .contact-form label textarea{
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                border: 1px solid #d4d4d4;
+                resize: none;
+                font-family: 'Proxima-Nova-Light';  
+            }
+
+            .contact .contact-contact-container .contact-form-container .contact-form label input:focus{
+                border-color: #129fea;
+                outline: none;
+            }
+            .contact .contact-contact-container .contact-form-container .contact-form .box-container button{
+                background-color: #9d9d9d;
+                border: 1px solid #9d9d9d;
+                color: #fff;
+                width: 150px;
+                height: 40px;
+                font-size: 18px;
+                font-family: 'Proxima-Nova-Regular';
+                cursor: pointer;
+            }
+            .contact .contact-contact-container .contact-form-container .contact-form .box-container button:focus,
+            .contact .contact-contact-container .contact-form-container .contact-form label textarea:focus{
+                outline: none;
+            }
+
+@media screen and (max-width:425px){
+    .contact .contact-contact-container{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .contact .contact-contact-container .contact-description{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    .contact .contact-contact-container .contact-form-container{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
