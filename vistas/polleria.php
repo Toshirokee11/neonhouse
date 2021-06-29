@@ -25,10 +25,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/POLLERIA/f1.png" alt="">
-                <img src="../public/imagenes/POLLERIA/f2.png" alt="">
-                <img src="../public/imagenes/POLLERIA/f3.png" alt="">
-                <img src="../public/imagenes/POLLERIA/f4.png" alt="">
+                <img src="../public/imagenes/POLLERIA/f1.webp" alt="">
+                <img src="../public/imagenes/POLLERIA/f2.webp" alt="">
+                <img src="../public/imagenes/POLLERIA/f3.webp" alt="">
+                <img src="../public/imagenes/POLLERIA/f4.webp" alt="">
             </figure>
         </div>
 

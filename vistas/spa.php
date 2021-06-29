@@ -24,10 +24,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f1.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f2.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f3.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f4.png" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/f1.webp" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/f2.webp" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/f3.webp" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/f4.webp" alt="">
             </figure>
         </div>
 
