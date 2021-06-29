@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+
+    <link rel="stylesheet" href="../public/css/shared/slider.css">
     
     <link rel="stylesheet" href="../public/css/shared/restaurante.css">
     

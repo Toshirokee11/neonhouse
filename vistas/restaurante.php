@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+
+    <link rel="stylesheet" href="../public/css/shared/slider.css">
     
     <link rel="stylesheet" href="../public/css/shared/restaurante.css">
-    
+
 
 </head>
 
@@ -22,23 +24,13 @@
         <h2 class="categoria1__titulo ">RESTAURANTE</h2>
       
 
-        <div class="overlay" id="overlay">
-            <figure class="overlay__imagen">
-               
-                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
-                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/restaurante/1.webp" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/restaurante/2.webp" alt="">
-                
-                
-    
-              
-    
+        <div id="slider">
+            <figure>
+                <img src="../public/imagenes/restaurante/f1.webp" alt="">
+                <img src="../public/imagenes/restaurante/f2.webp" alt="">
+                <img src="../public/imagenes/restaurante/f3.webp" alt="">
+                <img src="../public/imagenes/restaurante/f4.webp" alt="">
             </figure>
-    
-    
-    
-    
         </div>
     
 <br>
