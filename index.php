@@ -6,6 +6,7 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon House Led</title>
+    <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
     <meta name="description" content="Empresa dedicada al diseño de interiores y remodelación de locales comerciales u hogares, contando con los mejores materiales de decoración  y comunicación."/>
     <meta name="keywords" content="Diseño, Remodelación, Decoracion">
     <link rel="stylesheet" href="public/css/shared/header.css">
@@ -240,6 +241,12 @@
                 <img class="categoria__img lazyload" id="imagen__12" data-src="public/imagenes/cafeteria y jugueria_c.webp" alt="">
                 <figcaption class="categoria__desc">CAFETERIA Y JUGUERIA</figcaption>
             </figure>
+            <figure class="categoria__imagen">
+                <img class="categoria__img lazyload" id="imagen__13" data-src="public/imagenes/minimarket.webp" alt="">
+                <figcaption class="categoria__desc">MINIMARKET</figcaption>
+            </figure>
+         
+
 
 
            
@@ -458,7 +465,7 @@
 
             <img class="overlay__img imagen1 lazyload" data-src="public/imagenes/Panaderia y Pasteleria.webp" alt="">
             <img class="overlay__img imagen1 lazyload" data-src="public/imagenes/Cafeteria y jugueria.webp" alt="">
-
+            <img class="overlay__img imagen1 lazyload" data-src="public/imagenes/minimarket.webp" alt="">
         </figure>
 
     </div>

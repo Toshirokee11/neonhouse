@@ -6,9 +6,9 @@ class Conexion{
  public function __construct()
     {
     $host = "localhost";
-    $dbname = "ghxumdmy_neonhouselednew";
-    $username = "ghxumdmy_neonhoselednew";
-    $password = "zr.7KVB2U{6L";
+    $dbname = "neonh";
+    $username = "root";
+    $password = "";
     try {
         $this->db = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
     } catch (PDOException $th) {

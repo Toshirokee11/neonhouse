@@ -103,6 +103,11 @@
                 <img class="categoria1__img" id="imagen_8" src="../public/imagenes/categoria/hogar.webp" alt=""></a>
                 <figcaption class="categoria1__desc">HOGAR</figcaption>
             </figure>
+            <figure class="categoria1__imagen">
+                <a href="minimarket.php">
+                <img class="categoria1__img" id="imagen_9" src="../public/imagenes/categoria/minimarket.webp" alt=""></a>
+                <figcaption class="categoria1__desc">MINIMARKET</figcaption>
+            </figure>
 
 
 

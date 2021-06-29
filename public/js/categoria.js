@@ -10,7 +10,7 @@ let imagen9 = document.getElementById("imagen_9")
 let imagen10 = document.getElementById("imagen_10")
 let imagen11 = document.getElementById("imagen__11")
 let imagen12 = document.getElementById("imagen__12")
-
+let imagen13 = document.getElementById("imagen__13")
 let overlay = document.getElementById("overlay")
 let x = document.getElementById("x")
 let i = 0
@@ -142,7 +142,14 @@ i =11
 
 
 })
+imagen13.addEventListener("click", (e) => {
 
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[12].style.opacity = "1"
+i =12
+
+
+})
 
 
 
@@ -182,7 +189,7 @@ document.getElementById("derecha").addEventListener("click", function (e) {
     document.getElementsByClassName("overlay__img")[i].style.opacity = "1"}
 
     
-   else if (i == 11) {
+   else if (i == 12) {
         
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         i = 0
