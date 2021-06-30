@@ -19,8 +19,7 @@
 require_once '../admin/model/Categoria.php';
 $slug = $_GET['c'];
 $in = new Categoria(null,null,$slug);
-$categoria = $in->show();
-var_dump($categoria);
+$categoria = $in->findSlug();
 
 ?>
 

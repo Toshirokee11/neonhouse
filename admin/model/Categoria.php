@@ -53,20 +53,33 @@ class Categoria implements Modelo {
         return $insertar->execute();
     }
 
-    public function show()
+    public function findById()
+    {
+        $con = new Conexion();
+        $sql = "SELECT * FROM categorias WHERE id= '$this->id'";
+        $consulta = $con->db->prepare($sql);
+        $consulta->execute();
+        $objetoConsulta = $consulta->fetch(PDO::FETCH_ASSOC, );
+        $imagenes = $this->imagenesForId();
+        $objetoConsulta['imagenes'] = $imagenes;
+        $objetoConsulta = (object) $objetoConsulta;
+        return $objetoConsulta;
+    }
+
+    public function findSlug()
     {
         $con = new Conexion();
         $sql = "SELECT * FROM categorias WHERE slug= '$this->slug'";
         $consulta = $con->db->prepare($sql);
         $consulta->execute();
         $objetoConsulta = $consulta->fetch(PDO::FETCH_ASSOC, );
-        $imagenes = $this->imagenes();
+        $imagenes = $this->imagenesForSlug();
         $objetoConsulta['imagenes'] = $imagenes;
         $objetoConsulta = (object) $objetoConsulta;
         return $objetoConsulta;
     }
 
-    public function imagenes()
+    public function imagenesForSlug()
     {
         $con = new Conexion();
         $sql = "select imagen from imagenes  where tipoModelo = 'categoria' AND  idModelo = 
@@ -78,6 +91,16 @@ class Categoria implements Modelo {
 
     }
 
+    public function imagenesForId()
+    {
+        $con = new Conexion();
+        $sql = "select imagen from imagenes  where tipoModelo = 'categoria' AND  idModelo = $this->id ";
+        $consulta = $con->db->prepare($sql);
+        $consulta->execute();
+        $objetoConsulta = $consulta->fetchAll(PDO::FETCH_OBJ);
+        return $objetoConsulta;
+
+    }
 
 }
 
