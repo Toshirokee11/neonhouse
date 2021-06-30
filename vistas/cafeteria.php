@@ -26,8 +26,8 @@
 
                 <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
                 <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/CAFETERIA Y JUGUERIA/1.webp" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/CAFETERIA Y JUGUERIA/2.webp" alt="">
+                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/cafeteria1.webp" alt="">
+                <img class="overlay__img imagen1" src="../public/imagenes/cafeteria2.webp" alt="">
 
             </figure>
 

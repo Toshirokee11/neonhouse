@@ -13,6 +13,9 @@
 </head>
 <body>
 <?php require_once "layout/header.php" ?>
+<?php require_once "../admin/controller/userController.php";
+$sdasd = new UserController();
+?>
 
     <main>
         <section class="pry-dest-container">

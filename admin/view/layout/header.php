@@ -73,6 +73,7 @@
                         <h6 class="collapse-header">Administracion:</h6>
                         <a class="collapse-item" href="dashboard.php">Usuarios</a>
                         <a class="collapse-item" href="galeria.php">Galeria</a>
+                        <a class="collapse-item" href="categorias.php">Categorias</a>
                     </div>
                 </div>
             </li>

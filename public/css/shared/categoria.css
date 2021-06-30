@@ -48,6 +48,7 @@ figure {
 .categoria1__section{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0 .7rem;
 }
 .categoria1__img{
@@ -89,9 +90,6 @@ flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
-.derecha{
-    margin-right:2rem;
-}
 
 .categoria1__section{
     width: 80%;

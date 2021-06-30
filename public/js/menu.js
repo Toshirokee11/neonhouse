@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.burger-button');
-console.log(menuButton);
+// console.log(menuButton);
 const menu = document.querySelector('.menu');
-console.log(menu);
+//console.log(menu);
 
 function ShowHideMenu(){
     if(menu.classList.contains('is-active')){
@@ -15,7 +15,7 @@ menuButton.addEventListener('click', ShowHideMenu);
 
 // Desplegar submenu 1
 const displayfirstbutton = document.querySelector('.parent-first');
-console.log(displayfirstbutton);
+// console.log(displayfirstbutton);
 const firstoption_firstmenu = document.querySelector('.hidden-desk.first');
 const secondoption_firstmenu = document.querySelector('.hidden-desk.second');
 

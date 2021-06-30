@@ -53,7 +53,7 @@
                             <a href="vistas/servicios.php">Servicios</a>
                         </li>
                         <li class="submenu-element second">
-                            <a href="vistas/categoria.php">Categorías</a>
+                            <a href="vistas/categorias.php">Categorías</a>
                         </li>
                     </ul>
                 </li>
@@ -61,7 +61,7 @@
                     <a href="vistas/servicios.php">Servicios</a>
                 </li>
                 <li class="hidden-desk fourth">
-                    <a href="vistas/categoria.php">Categorías</a>
+                    <a href="vistas/categorias.php">Categorías</a>
                 </li>
                 <li>
                     <a href="vistas/proyectos.php">Proyectos</a>

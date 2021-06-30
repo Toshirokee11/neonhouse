@@ -27,7 +27,7 @@ $('#restaurante').submit(function(e){
                     //$("#restaurante").trigger('reset');
                     //$("#form_1").hide();
                     //console.log(response)
-                    window.location.href = "categoria.php";
+                    window.location.href = "categorias.php";
                     redirectWindow.location;
                 });
                                

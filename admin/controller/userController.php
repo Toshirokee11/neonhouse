@@ -1,5 +1,5 @@
 <?php
-
+// header('Content-Type: application/json');
 require_once dirname(dirname(__FILE__)) .'/model/userModel.php';
 require_once 'staterController.php';
 $sesion = new StaterController();

@@ -35,7 +35,7 @@
                             <a href="servicios.php">Servicios</a>
                         </li>
                         <li class="submenu-element second">
-                            <a href="categoria.php">Categorías</a>
+                            <a href="categorias.php">Categorías</a>
                         </li>
                     </ul>
                 </li>
@@ -43,7 +43,7 @@
                     <a href="servicios.php">Servicios</a>
                 </li>
                 <li class="hidden-desk fourth">
-                    <a href="categoria.php">Categorías</a>
+                    <a href="categorias.php">Categorías</a>
                 </li>
                 <li>
                     <a href="proyectos.php">Proyectos</a>

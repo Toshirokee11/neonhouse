@@ -141,9 +141,7 @@ class Usuario{
     {
         $ic = new Conexion();
         $sql = "SELECT galeria.descripcion, galeria.image FROM galeria
-        INNER JOIN users
-        ON galeria.idcliente = users.id
-        WHERE  users.user_level =3";
+        ";
         $consulta = $ic->db->prepare($sql);
         $consulta->execute();
         if($consulta->execute()){

@@ -4,119 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon House Led-Categorías</title>
+    <title>Neon House Led-Servicios</title>
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
-    <link rel="stylesheet" href="../public/css/shared/categoria.css">
+
+    <link rel="stylesheet" href="../public/css/shared/restaurante.css">
+
+
 </head>
 
 <body>
-<?php require_once "layout/header.php" ?>
+<?php require_once "layout/header.php" ;
+require_once '../admin/model/Categoria.php';
+$slug = $_GET['c'];
+$in = new Categoria(null,null,$slug);
+$categoria = $in->show();
+
+?>
 
     <main class="main__categoria">
-        <h2 class="categoria1__titulo ">CATEGORÍAS</h2>
-        <div class="categoria1__section">
+        <h2 class="categoria1__titulo "><?=strtoupper($categoria[0]->nombre)?></h2>
+        <div class="overlay" id="overlay">
+            <figure class="overlay__imagen">
 
+                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
+                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
+                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/<?=$categoria[0]->imagen?>" alt="">
+                <img class="overlay__img imagen1" src="../public/imagenes/<?=$categoria[1]->imagen?>" alt="">
 
-
-            <figure class="categoria1__imagen derecha">
-                <a href="restaurante.php">
-                <img class="categoria1__img" id="imagen_5" src="../public/imagenes/categoria/restaurante.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">RESTAURANTE</figcaption>
-            </figure>
-
-
-            <figure class="categoria1__imagen">
-                <a href="cevicheria.php">
-                <img class="categoria1__img" id="imagen_1" src="../public/imagenes/categoria/cevicheria.webp" alt=""></a>
-                <figcaption class="categoria1__desc">CEVICHERÍA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="sangucheria.php">
-                <img class="categoria1__img" id="imagen_2" src="../public/imagenes/categoria/sangucheria.webp" alt=""></a>
-                <figcaption class="categoria1__desc">SANGUCHERÍA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen">
-                <a href="fast__food.php">
-                <img class="categoria1__img" id="imagen_7" src="../public/imagenes/categoria/fast food.webp" alt=""></a>
-                <figcaption class="categoria1__desc">FAST FOOD</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="polleria.php">
-                <img class="categoria1__img" id="imagen_4" src="../public/imagenes/categoria/polleria.webp" alt=""></a>
-                <figcaption class="categoria1__desc">POLLERÍA</figcaption>
-            </figure>
-
-
-            <figure class="categoria1__imagen">
-                <a href="discoteca.php">
-                <img class="categoria1__img" id="imagen_3" src="../public/imagenes/categoria/discoteca.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">DISCOTECA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="pizzeria.php">
-                <img class="categoria1__img" id="imagen_10" src="../public/imagenes/categoria/pizzeria.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">PIZZERÍA</figcaption>
             </figure>
 
 
 
+        </div>
 
+        <br>
 
-            <figure class="categoria1__imagen">
-                <a href="cafeteria.php">
-                <img class="categoria1__img" id="imagen_6" src="../public/imagenes/categoria/cafeteria.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">CAFETERÍA Y JUGUERIA</figcaption>
-            </figure>
+        <h2 class="subtitulo">Revisa nuestros diseños exclusivos:</h2>
+        <a class="catalogo" id="catalogo" href="#">Ver catálogo completo</a>
 
+        <a class="cotizar" href="contacto.php">Cotizar</a>
 
+        <div id="form_1" class="overlay__formulario">
+            <a href="#" id="x_1" class="overlay__x x">X</a>
+            <form class="overlay__form" id="restaurante">
+                <div class="empresa">
+                    <label class="overlay__label" for="empresa">Nombre o Empresa:
+                    </label>
 
-            <figure class="categoria1__imagen derecha">
-                <a href="panaderia.php">
-                <img class="categoria1__img" id="imagen_9" src="../public/imagenes/categoria/panaderia.webp" alt=""></a>
-                <figcaption class="categoria1__desc">PANADERÍA Y PASTELERÍA</figcaption>
-            </figure>
+                    <input class="overlay__input e" type="text" id="empresa" pattern="[a-zA-Z ]{2,254}"
+                        title="Solo debe contener letras. e.g. Company" required>
+                </div>
+                <div class="correo">
+                    <label for="email" class="overlay__label cor">Correo:</label>
+                    <input id="email" class="overlay__input c" type="email"
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="e.g. aso@gmail.com" required>
 
-            <figure class="categoria1__imagen">
-                <a href="spa.php">
-                <img class="categoria1__img" id="imagen_8" src="../public/imagenes/categoria/salon y spa.webp" alt=""></a>
-                <figcaption class="categoria1__desc">SALON SPA Y BARBERÍA</figcaption>
-            </figure>
+                </div>
+                <div class="telefono">
+                    <label for="tel" class="overlay__label te">Celular:</label>
+                    <input type="text" id="tel" class="overlay__input t" pattern="[0-9]{9}" title="debe conter numeros"
+                        required>
+                </div>
+                <input type="hidden" id="nomcategory" class="hiden" value="cafeteria">
+                <input type="hidden" id="url" class="hiden" value="https://www.flipsnack.com/alonsoddt/cafeteria-y-jugueri-a.html">
+                <input type="submit" class="overlay__submit extra" value="Obtener mi catálogo de categoría cafetería y juguería">
 
-            <figure class="categoria1__imagen derecha">
-                <a href="bar.php">
-                <img class="categoria1__img" id="imagen_9" src="../public/imagenes/categoria/bar.webp" alt=""></a>
-                <figcaption class="categoria1__desc">BAR</figcaption>
-            </figure>
+            </form>
 
-            <figure class="categoria1__imagen">
-                <a href="hogar.php">
-                <img class="categoria1__img" id="imagen_8" src="../public/imagenes/categoria/hogar.webp" alt=""></a>
-                <figcaption class="categoria1__desc">HOGAR</figcaption>
-            </figure>
-
-
-
-
-
-
-
-
-
+        </div>
 
 
     </main>
 
-    <?php require_once "layout/foother.php" ?>
+<?php require_once "layout/foother.php" ?>
+
+<script type="text/javascript" src="../public/js/restaurante.js"></script>
+<script type="text/javascript" src="../public/js/catalogrequest.js"></script>
+
+
 </body>
 
 </html>
