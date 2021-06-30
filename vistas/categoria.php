@@ -20,19 +20,34 @@ require_once '../admin/model/Categoria.php';
 $slug = $_GET['c'];
 $in = new Categoria(null,null,$slug);
 $categoria = $in->show();
+var_dump($categoria);
 
 ?>
 
     <main class="main__categoria">
-        <h2 class="categoria1__titulo "><?=strtoupper($categoria[0]->nombre)?></h2>
+        <h2 class="categoria1__titulo "><?=strtoupper($categoria->nombre)?></h2>
         <div class="overlay" id="overlay">
             <figure class="overlay__imagen">
 
                 <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
                 <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/<?=$categoria[0]->imagen?>" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/<?=$categoria[1]->imagen?>" alt="">
+              
+              <?php   
+                $i = 0;
+                foreach ($categoria->imagenes as $imagen ) {
+            ?>
+                <?php if($i==0):?>
+                    <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/<?=$imagen->imagen?>" alt="">
+                <?php else:?>
+                    <img class="overlay__img imagen1" src="../public/imagenes/<?=$imagen->imagen?>" alt="">
+                <?php  endif; ?>
+            <?php
+                $i++;
+                }
+              ?>
 
+
+               
             </figure>
 
 

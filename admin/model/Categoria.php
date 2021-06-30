@@ -16,7 +16,7 @@ class Categoria implements Modelo {
     public static function all()
     {
         $con = new Conexion();
-        $sql = " SELECT DISTINCT(imagenes.idModelo), nombre ,slug, imagen, tipoModelo FROM categorias 
+        $sql = "SELECT DISTINCT(imagenes.idModelo), nombre ,slug, imagen, tipoModelo FROM categorias 
         JOIN imagenes on categorias.id = imagenes.idModelo 
         WHERE tipoModelo = 'categoria'
         GROUP BY imagenes.idModelo";
@@ -56,16 +56,26 @@ class Categoria implements Modelo {
     public function show()
     {
         $con = new Conexion();
-        $sql = "  
-        SELECT nombre,slug,tipoModelo,imagen FROM categorias 
-               JOIN imagenes
-              on categorias.id = imagenes.idModelo 
-              WHERE 
-               tipoModelo = 'categoria' and categorias.slug = '$this->slug'";
+        $sql = "SELECT * FROM categorias WHERE slug= '$this->slug'";
+        $consulta = $con->db->prepare($sql);
+        $consulta->execute();
+        $objetoConsulta = $consulta->fetch(PDO::FETCH_ASSOC, );
+        $imagenes = $this->imagenes();
+        $objetoConsulta['imagenes'] = $imagenes;
+        $objetoConsulta = (object) $objetoConsulta;
+        return $objetoConsulta;
+    }
+
+    public function imagenes()
+    {
+        $con = new Conexion();
+        $sql = "select imagen from imagenes  where tipoModelo = 'categoria' AND  idModelo = 
+        ( SELECT id FROM categorias WHERE slug = '$this->slug') ";
         $consulta = $con->db->prepare($sql);
         $consulta->execute();
         $objetoConsulta = $consulta->fetchAll(PDO::FETCH_OBJ);
         return $objetoConsulta;
+
     }
 
 
