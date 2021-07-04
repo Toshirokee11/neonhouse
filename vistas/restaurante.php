@@ -26,10 +26,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/restaurante/f1.webp" alt="">
-                <img src="../public/imagenes/restaurante/f2.webp" alt="">
-                <img src="../public/imagenes/restaurante/f3.webp" alt="">
-                <img src="../public/imagenes/restaurante/f4.webp" alt="">
+                <img src="../public/imagenes/restaurante/f1.png" alt="">
+                <img src="../public/imagenes/restaurante/f2.png" alt="">
+                <img src="../public/imagenes/restaurante/f3.png" alt="">
+                <img src="../public/imagenes/restaurante/f4.png" alt="">
             </figure>
         </div>
     

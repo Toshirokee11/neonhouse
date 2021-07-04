@@ -25,10 +25,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/PIZZERIA/f1.webp" alt="">
-                <img src="../public/imagenes/PIZZERIA/f2.webp" alt="">
-                <img src="../public/imagenes/PIZZERIA/f3.webp" alt="">
-                <img src="../public/imagenes/PIZZERIA/f4.webp" alt="">
+                <img src="../public/imagenes/PIZZERIA/f1.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/f2.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/f3.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/f4.png" alt="">
             </figure>
         </div>
 

@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    
+    <link rel="stylesheet" href="../public/css/shared/slider.css">
 
     <link rel="stylesheet" href="../public/css/shared/restaurante.css">
 
@@ -21,18 +23,13 @@
         <h2 class="categoria1__titulo ">CAFETERÍA Y JUGUERÍA</h2>
 
 
-        <div class="overlay" id="overlay">
-            <figure class="overlay__imagen">
-
-                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
-                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/CAFETERIA Y JUGUERIA/1.webp" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/CAFETERIA Y JUGUERIA/2.webp" alt="">
-
+        <div id="slider">
+            <figure>
+                <img src="../public/imagenes/CAFETERIA Y JUGUERIA/f1.png" alt="">
+                <img src="../public/imagenes/CAFETERIA Y JUGUERIA/f2.png" alt="">
+                <img src="../public/imagenes/CAFETERIA Y JUGUERIA/f3.png" alt="">
+                <img src="../public/imagenes/CAFETERIA Y JUGUERIA/f4.png" alt="">
             </figure>
-
-
-
         </div>
 
         <br>

@@ -23,18 +23,13 @@
         <h2 class="categoria1__titulo ">CEVICHERÍA</h2>
       
 
-        <div class="overlay" id="overlay">
-            <figure class="overlay__imagen">
-               
-                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
-                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/CEVICHERIA/1.webp" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/CEVICHERIA/2.webp" alt="">
-                      
-    
+        <div id="slider">
+            <figure>
+                <img src="../public/imagenes/CEVICHERIA/f1.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/f2.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/f3.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/f4.png" alt="">
             </figure>
-    
-       
         </div>
     
 <br>

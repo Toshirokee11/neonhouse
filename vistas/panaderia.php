@@ -25,10 +25,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f1.webp" alt="">
-                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f2.webp" alt="">
-                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f3.webp" alt="">
-                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f4.webp" alt="">
+                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f1.png" alt="">
+                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f2.png" alt="">
+                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f3.png" alt="">
+                <img src="../public/imagenes/PANADERIA Y PASTELERIA/f4.png" alt="">
             </figure>
         </div>
 
