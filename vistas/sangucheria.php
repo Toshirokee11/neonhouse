@@ -18,7 +18,14 @@
         
         <?php require_once "layout/modal.php" ?> 
 
-        <img name="slider" width="100%" src="../public/imagenes/SANGUCHERIA/f1.png">
+        <div id="slider">
+            <figure>
+                <img src="../public/imagenes/SANGUCHERIA/f1.png" alt="">
+                <img src="../public/imagenes/SANGUCHERIA/f2.png" alt="">
+                <img src="../public/imagenes/SANGUCHERIA/f3.png" alt="">
+                <img src="../public/imagenes/SANGUCHERIA/f4.png" alt="">
+            </figure>
+        </div>
 
         <br>
 
@@ -62,27 +69,6 @@
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
     <?php require_once "layout/photosphere-script.php" ?>
-    <script>
-        window.addEventListener('load',function(){
-            var imagenes = [];
-            imagenes[0]='../public/imagenes/SANGUCHERIA/f1.png';
-            imagenes[1]='../public/imagenes/SANGUCHERIA/f2.png';
-            imagenes[2]='../public/imagenes/SANGUCHERIA/f3.png';
-            imagenes[3]='../public/imagenes/SANGUCHERIA/f4.png';
-            var i = 0;
-            function cambiarImagenes(){
-                document.slider.src=imagenes[i];
-                if ( i < 3 ) {
-                    i++;
-                } else {
-                    i = 0;
-                }
-            }
-
-            setInterval(cambiarImagenes,3000);
-            
-        });
-    </script>
 
 </body>
 
