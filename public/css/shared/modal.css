@@ -1,0 +1,152 @@
+.fa-angle-double-down, .fa-angle-double-up{
+    font-size: 50px;
+}
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    font-family: 'Proxima-Nova-SemiBold';
+}
+.contenedor{
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    background: white;
+    opacity: 0.8;
+    position: relative;
+    transform: translateY(-30%);
+}
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    cursor: pointer;
+}
+.lbl-modal{
+    position: absolute;
+    padding: 10px 25px;
+    opacity: 0.8;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+}
+#btn-modal{
+    display: none;
+}
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#btn-modal:checked ~ .lbl-modal{
+    visibility: hidden;
+}
+#btn-modal:checked ~ .modal .contenedor{
+    transform: translateY(0%);
+}
+.contenido{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.izquierda, .derecha{
+    width: 50%;
+    padding: 20px;
+}
+.derecha h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.derecha .texto{
+    font-size: 2rem;
+    color: darkgray;
+    margin-bottom: 1rem;
+}
+.derecha .codigo{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.logos a{
+    font-size: 40px;
+    color: black;
+    margin: 0 15px;
+}
+@media (max-width:1024px){
+    .contenedor{
+        height: 400px;
+    }
+    .derecha h3{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .derecha .texto{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .derecha .codigo{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .logos a{
+        font-size: 30px;
+        margin: 0 10px;
+    }
+}
+@media (max-width:750px){
+    .fa-angle-double-down, .fa-angle-double-up{
+        font-size: 35px;
+    }
+    .contenedor{
+        height: 300px;
+    }
+    .derecha h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .derecha .texto{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    .derecha .codigo{
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    .logos a{
+        font-size: 20px;
+        margin: 0 4px;
+    }
+}
+@media (max-width:500px){
+    .contenedor{
+        height: 550px;
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(2,50%);
+    }
+    .izquierda, .derecha{
+        width: 100%;
+    }
+}
+@media (max-height:720px){
+    .contenedor{
+        height: 450px;
+    }
+}

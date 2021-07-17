@@ -11,9 +11,30 @@
 
     <link rel="stylesheet" href="../public/css/shared/slider.css">
 
+    <link rel="stylesheet" href="../public/css/shared/modal.css">
+
     <link rel="stylesheet" href="../public/css/shared/restaurante.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <link href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"> </script>
+
+    <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
+
+    <style>
+        #photosphere { height:500px; width:100%; margin: 0 auto; }
+        @media (max-width:1024px){
+            #photosphere { height:350px; width:100%; margin: 0 auto; }
+        }
+        @media (max-width:750px){
+            #photosphere { height:250px; width:100%; margin: 0 auto; }
+        }
+        @media (max-height:720px){
+            #photosphere { height:150px; width:100%; margin: 0 auto; }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +42,8 @@
 
     <main class="main__categoria">
         <h2 class="categoria1__titulo ">SANGUCHERÍA</h2>
-
+        
+        <?php require_once "layout/modal.php" ?>
 
         <div id="slider">
             <figure>
@@ -70,10 +92,19 @@
 
 
     </main>
-<?php require_once "layout/foother.php" ?>
-<script type="text/javascript" src="../public/js/restaurante.js"></script>
+    <?php require_once "layout/foother.php" ?>
+    <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 </body>
 
