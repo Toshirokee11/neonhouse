@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon House Led-Servicios</title>
 
-    <link rel="stylesheet" href="../public/css/shared/header.css">
-    <link rel="stylesheet" href="../public/css/shared/footer.css">
-
-    <link rel="stylesheet" href="../public/css/shared/slider.css">
-
-    <link rel="stylesheet" href="../public/css/shared/restaurante.css">
-
+    <?php require_once "layout/links.php" ?>
 
 </head>
 
@@ -21,6 +15,7 @@
     <main class="main__categoria">
         <h2 class="categoria1__titulo ">SALÓN SPA Y BARBERÍA</h2>
 
+        <?php require_once "layout/modal.php" ?>
 
         <div id="slider">
             <figure>
@@ -69,9 +64,10 @@
 
 
     </main>
-<?php require_once "layout/foother.php" ?>
-<script type="text/javascript" src="../public/js/restaurante.js"></script>
+    <?php require_once "layout/foother.php" ?>
+    <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
+    <?php require_once "layout/photosphere-script.php" ?>
 
 
 </body>

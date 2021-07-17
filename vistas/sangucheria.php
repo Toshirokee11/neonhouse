@@ -6,35 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon House Led-Servicios</title>
 
-    <link rel="stylesheet" href="../public/css/shared/header.css">
-    <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <?php require_once "layout/links.php" ?>
 
-    <link rel="stylesheet" href="../public/css/shared/slider.css">
-
-    <link rel="stylesheet" href="../public/css/shared/modal.css">
-
-    <link rel="stylesheet" href="../public/css/shared/restaurante.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <link href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"> </script>
-
-    <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
-
-    <style>
-        #photosphere { height:500px; width:100%; margin: 0 auto; }
-        @media (max-width:1024px){
-            #photosphere { height:350px; width:100%; margin: 0 auto; }
-        }
-        @media (max-width:750px){
-            #photosphere { height:250px; width:100%; margin: 0 auto; }
-        }
-        @media (max-height:720px){
-            #photosphere { height:150px; width:100%; margin: 0 auto; }
-        }
-    </style>
 </head>
 
 <body>
@@ -43,16 +16,9 @@
     <main class="main__categoria">
         <h2 class="categoria1__titulo ">SANGUCHERÍA</h2>
         
-        <?php require_once "layout/modal.php" ?>
+        <?php require_once "layout/modal.php" ?> 
 
-        <div id="slider">
-            <figure>
-                <img src="../public/imagenes/SANGUCHERIA/f1.png" alt="">
-                <img src="../public/imagenes/SANGUCHERIA/f2.png" alt="">
-                <img src="../public/imagenes/SANGUCHERIA/f3.png" alt="">
-                <img src="../public/imagenes/SANGUCHERIA/f4.png" alt="">
-            </figure>
-        </div>
+        <img name="slider" width="100%" src="../public/imagenes/SANGUCHERIA/f1.png">
 
         <br>
 
@@ -95,15 +61,27 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
+    <?php require_once "layout/photosphere-script.php" ?>
     <script>
-    // 360 viewer
-    var PSV = new PhotoSphereViewer({
-        panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
-        container: 'photosphere',
-        navbar: 'fullscreen',
-        default_fov: 65,
-        mousewheel: false,
-    });
+        window.addEventListener('load',function(){
+            var imagenes = [];
+            imagenes[0]='../public/imagenes/SANGUCHERIA/f1.png';
+            imagenes[1]='../public/imagenes/SANGUCHERIA/f2.png';
+            imagenes[2]='../public/imagenes/SANGUCHERIA/f3.png';
+            imagenes[3]='../public/imagenes/SANGUCHERIA/f4.png';
+            var i = 0;
+            function cambiarImagenes(){
+                document.slider.src=imagenes[i];
+                if ( i < 3 ) {
+                    i++;
+                } else {
+                    i = 0;
+                }
+            }
+
+            setInterval(cambiarImagenes,3000);
+            
+        });
     </script>
 
 </body>

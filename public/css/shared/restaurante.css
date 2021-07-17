@@ -149,7 +149,6 @@
     }
 .subtitulo{
     font-size: 1.5rem;
-    text-align: initial;
     margin-left: 10px;
     margin-top: 2rem;
 }
@@ -160,13 +159,9 @@
 .cor{
     display: initial;
 }
-.catalogo{margin-left: 10px;
+.catalogo{
     width: 20%;
     padding: 1rem;
-
-
-
-
 }
 .overlay__label{
     font-size: 18px;
