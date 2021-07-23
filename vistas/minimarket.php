@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Minimarket/f1.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/f2.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/f3.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/f4.jpg" alt="">
+                <img src="../public/imagenes/Minimarket/1.jpg" alt="">
+                <img src="../public/imagenes/Minimarket/2.jpg" alt="">
+                <img src="../public/imagenes/Minimarket/3.jpg" alt="">
+                <img src="../public/imagenes/Minimarket/4.jpg" alt="">
             </figure>
         </div>
 
@@ -69,7 +69,16 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-    <?php require_once "layout/photosphere-script.php" ?>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: '../public/imagenes/imagenes 360/SANGUCHERIA/1.png',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 </body>
 

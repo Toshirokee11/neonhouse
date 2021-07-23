@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/FAST FOOD/f1.png" alt="">
-                <img src="../public/imagenes/FAST FOOD/f2.png" alt="">
-                <img src="../public/imagenes/FAST FOOD/f3.png" alt="">
-                <img src="../public/imagenes/FAST FOOD/f4.png" alt="">
+                <img src="../public/imagenes/FAST FOOD/1.png" alt="">
+                <img src="../public/imagenes/FAST FOOD/2.png" alt="">
+                <img src="../public/imagenes/FAST FOOD/3.png" alt="">
+                <img src="../public/imagenes/FAST FOOD/4.png" alt="">
             </figure>
         </div>
     
@@ -67,7 +67,16 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-    <?php require_once "layout/photosphere-script.php" ?>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: '../public/imagenes/imagenes 360/FAST FOOD/1.png',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 </body>
 

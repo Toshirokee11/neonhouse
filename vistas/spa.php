@@ -19,10 +19,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f1.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f2.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f3.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/f4.png" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/1.png" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/2.png" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/3.png" alt="">
+                <img src="../public/imagenes/SALON SPA Y BARBERIA/4.png" alt="">
             </figure>
         </div>
 
@@ -67,7 +67,16 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-    <?php require_once "layout/photosphere-script.php" ?>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 
 </body>

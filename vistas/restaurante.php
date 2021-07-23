@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<?php require_once "layout/header.php" ?>
+    <?php require_once "layout/header.php" ?>
 
 
     <main class="main__categoria">
@@ -22,10 +22,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/restaurante/f1.png" alt="">
-                <img src="../public/imagenes/restaurante/f2.png" alt="">
-                <img src="../public/imagenes/restaurante/f3.png" alt="">
-                <img src="../public/imagenes/restaurante/f4.png" alt="">
+                <img src="../public/imagenes/restaurante/1.png" alt="">
+                <img src="../public/imagenes/restaurante/2.png" alt="">
+                <img src="../public/imagenes/restaurante/3.png" alt="">
+                <img src="../public/imagenes/restaurante/4.png" alt="">
             </figure>
         </div>
     
@@ -65,16 +65,24 @@
 
 </form>
 
-
         </div>
             
             
 
     </main>
-<?php require_once "layout/foother.php" ?>
-<script type="text/javascript" src="../public/js/restaurante.js"></script>
-<script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-<?php require_once "layout/photosphere-script.php" ?>
+    <?php require_once "layout/foother.php" ?>
+    <script type="text/javascript" src="../public/js/restaurante.js"></script>
+    <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: '../public/imagenes/imagenes 360/RESTAURANTE/1.png',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 
 </body>

@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/PIZZERIA/f1.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/f2.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/f3.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/f4.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/1.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/2.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/3.png" alt="">
+                <img src="../public/imagenes/PIZZERIA/4.png" alt="">
             </figure>
         </div>
 
@@ -69,7 +69,16 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-    <?php require_once "layout/photosphere-script.php" ?>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 
 </body>

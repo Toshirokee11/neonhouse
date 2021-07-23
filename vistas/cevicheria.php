@@ -21,10 +21,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/CEVICHERIA/f1.png" alt="">
-                <img src="../public/imagenes/CEVICHERIA/f2.png" alt="">
-                <img src="../public/imagenes/CEVICHERIA/f3.png" alt="">
-                <img src="../public/imagenes/CEVICHERIA/f4.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/1.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/2.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/3.png" alt="">
+                <img src="../public/imagenes/CEVICHERIA/4.png" alt="">
             </figure>
         </div>
     
@@ -74,7 +74,16 @@
     <?php require_once "layout/foother.php" ?>
     <script type="text/javascript" src="../public/js/restaurante.js"></script>
     <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-    <?php require_once "layout/photosphere-script.php" ?>
+    <script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: '../public/imagenes/imagenes 360/CEVICHERIA/1.png',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 
 </body>

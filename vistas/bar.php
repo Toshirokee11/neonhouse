@@ -18,18 +18,13 @@
 
         <?php require_once "layout/modal.php" ?>
 
-        <div class="overlay" id="overlay">
-            <figure class="overlay__imagen">
-
-                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
-                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
-                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/BAR/2.webp" alt="">
-                <img class="overlay__img imagen1" src="../public/imagenes/BAR/1.webp" alt="">
-
+        <div id="slider">
+            <figure>
+                <img src="../public/imagenes/BAR/1.png" alt="">
+                <img src="../public/imagenes/BAR/2.png" alt="">
+                <img src="../public/imagenes/BAR/3.png" alt="">
+                <img src="../public/imagenes/BAR/4.png" alt="">
             </figure>
-
-
-
         </div>
 
         <br>
@@ -75,7 +70,16 @@
 
 <script type="text/javascript" src="../public/js/restaurante.js"></script>
 <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
-<?php require_once "layout/photosphere-script.php" ?>
+<script>
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+        panorama: 'https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/Bryce-Canyon-National-Park-Mark-Doliner.jpg',
+        container: 'photosphere',
+        navbar: 'fullscreen',
+        default_fov: 65,
+        mousewheel: false,
+    });
+    </script>
 
 </body>
 
