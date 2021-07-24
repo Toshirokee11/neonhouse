@@ -70,7 +70,7 @@
     padding: 20px;
 }
 .derecha h3{
-    font-size: 5rem;
+    font-size: 4.75rem;
     margin-bottom: 3rem;
 }
 .derecha .texto{
@@ -79,7 +79,7 @@
     margin-bottom: 1rem;
 }
 .derecha .codigo{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
 }
 .logos a{
@@ -100,7 +100,7 @@
         margin-bottom: 1rem;
     }
     .derecha .codigo{
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 2rem;
     }
     .logos a{
@@ -124,7 +124,7 @@
         margin-bottom: 1rem;
     }
     .derecha .codigo{
-        font-size: 1.25rem;
+        font-size: 0.9rem;
         margin-bottom: 2rem;
     }
     .logos a{
@@ -132,7 +132,7 @@
         margin: 0 4px;
     }
 }
-@media (max-width:500px){
+@media (max-width:600px){
     .contenedor{
         height: 550px;
     }
