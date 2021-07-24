@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/PIZZERIA/1.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/2.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/3.png" alt="">
-                <img src="../public/imagenes/PIZZERIA/4.png" alt="">
+                <img src="../public/imagenes/Slider/PIZZERIA/1.png" alt="">
+                <img src="../public/imagenes/Slider/PIZZERIA/2.png" alt="">
+                <img src="../public/imagenes/Slider/PIZZERIA/3.png" alt="">
+                <img src="../public/imagenes/Slider/PIZZERIA/4.png" alt="">
             </figure>
         </div>
 
@@ -72,7 +72,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/imagenes 360/PIZZERIA/1.jpg',
+        panorama: '../public/imagenes/Imagenes 360/PIZZERIA/1.jpg',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,

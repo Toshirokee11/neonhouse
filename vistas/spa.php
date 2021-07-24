@@ -19,10 +19,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/1.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/2.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/3.png" alt="">
-                <img src="../public/imagenes/SALON SPA Y BARBERIA/4.png" alt="">
+                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/1.png" alt="">
+                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/2.png" alt="">
+                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/3.png" alt="">
+                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/4.png" alt="">
             </figure>
         </div>
 
@@ -70,7 +70,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/imagenes 360/SALON SPA Y BARBERIA/4.jpg',
+        panorama: '../public/imagenes/Imagenes 360/SALON SPA Y BARBERIA/4.jpg',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,
