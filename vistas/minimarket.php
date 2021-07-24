@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Minimarket/1.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/2.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/3.jpg" alt="">
-                <img src="../public/imagenes/Minimarket/4.jpg" alt="">
+                <img src="../public/imagenes/Minimarket/1.png" alt="">
+                <img src="../public/imagenes/Minimarket/2.png" alt="">
+                <img src="../public/imagenes/Minimarket/3.png" alt="">
+                <img src="../public/imagenes/Minimarket/4.png" alt="">
             </figure>
         </div>
 
@@ -72,7 +72,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/imagenes 360/SANGUCHERIA/1.png',
+        panorama: '../public/imagenes/imagenes 360/MINIMARKET/1.jpg',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,
