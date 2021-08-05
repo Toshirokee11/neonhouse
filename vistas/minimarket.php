@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/MINIMARKET/1.png" alt="">
-                <img src="../public/imagenes/Slider/MINIMARKET/2.png" alt="">
-                <img src="../public/imagenes/Slider/MINIMARKET/3.png" alt="">
-                <img src="../public/imagenes/Slider/MINIMARKET/4.png" alt="">
+                <img src="../public/imagenes/Slider/MINIMARKET/1.webp" alt="">
+                <img src="../public/imagenes/Slider/MINIMARKET/2.webp" alt="">
+                <img src="../public/imagenes/Slider/MINIMARKET/3.webp" alt="">
+                <img src="../public/imagenes/Slider/MINIMARKET/4.webp" alt="">
             </figure>
         </div>
 

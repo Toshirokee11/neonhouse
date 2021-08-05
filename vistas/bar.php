@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/BAR/1.png" alt="">
-                <img src="../public/imagenes/Slider/BAR/2.png" alt="">
-                <img src="../public/imagenes/Slider/BAR/3.png" alt="">
-                <img src="../public/imagenes/Slider/BAR/4.png" alt="">
+                <img src="../public/imagenes/Slider/BAR/1.webp" alt="">
+                <img src="../public/imagenes/Slider/BAR/2.webp" alt="">
+                <img src="../public/imagenes/Slider/BAR/3.webp" alt="">
+                <img src="../public/imagenes/Slider/BAR/4.webp" alt="">
             </figure>
         </div>
 

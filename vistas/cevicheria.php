@@ -21,10 +21,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/CEVICHERIA/1.png" alt="">
-                <img src="../public/imagenes/Slider/CEVICHERIA/2.png" alt="">
-                <img src="../public/imagenes/Slider/CEVICHERIA/3.png" alt="">
-                <img src="../public/imagenes/Slider/CEVICHERIA/4.png" alt="">
+                <img src="../public/imagenes/Slider/CEVICHERIA/1.webp" alt="">
+                <img src="../public/imagenes/Slider/CEVICHERIA/2.webp" alt="">
+                <img src="../public/imagenes/Slider/CEVICHERIA/3.webp" alt="">
+                <img src="../public/imagenes/Slider/CEVICHERIA/4.webp" alt="">
             </figure>
         </div>
     
@@ -77,7 +77,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/Imagenes 360/CEVICHERIA/1.png',
+        panorama: '../public/imagenes/Imagenes 360/CEVICHERIA/1.webp',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,
