@@ -19,10 +19,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/1.webp" alt="">
-                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/2.webp" alt="">
-                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/3.webp" alt="">
-                <img src="../public/imagenes/Slider/SALON SPA Y BARBERIA/4.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SALON SPA Y BARBERIA/1.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SALON SPA Y BARBERIA/2.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SALON SPA Y BARBERIA/3.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SALON SPA Y BARBERIA/4.webp" alt="">
             </figure>
         </div>
 

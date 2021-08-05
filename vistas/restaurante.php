@@ -22,10 +22,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/RESTAURANTE/1.webp" alt="">
-                <img src="../public/imagenes/Slider/RESTAURANTE/2.webp" alt="">
-                <img src="../public/imagenes/Slider/RESTAURANTE/3.webp" alt="">
-                <img src="../public/imagenes/Slider/RESTAURANTE/4.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/RESTAURANTE/1.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/RESTAURANTE/2.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/RESTAURANTE/3.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/RESTAURANTE/4.webp" alt="">
             </figure>
         </div>
     

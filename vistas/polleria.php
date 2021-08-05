@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/POLLERIA/1.webp" alt="">
-                <img src="../public/imagenes/Slider/POLLERIA/2.webp" alt="">
-                <img src="../public/imagenes/Slider/POLLERIA/3.webp" alt="">
-                <img src="../public/imagenes/Slider/POLLERIA/4.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/POLLERIA/1.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/POLLERIA/2.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/POLLERIA/3.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/POLLERIA/4.webp" alt="">
             </figure>
         </div>
 

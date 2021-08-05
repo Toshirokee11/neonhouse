@@ -20,10 +20,10 @@
 
         <div id="slider">
             <figure>
-                <img src="../public/imagenes/Slider/SANGUCHERIA/1.webp" alt="">
-                <img src="../public/imagenes/Slider/SANGUCHERIA/2.webp" alt="">
-                <img src="../public/imagenes/Slider/SANGUCHERIA/3.webp" alt="">
-                <img src="../public/imagenes/Slider/SANGUCHERIA/4.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SANGUCHERIA/1.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SANGUCHERIA/2.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SANGUCHERIA/3.webp" alt="">
+                <img loading="lazy" src="../public/imagenes/Slider/SANGUCHERIA/4.webp" alt="">
             </figure>
         </div>
 
