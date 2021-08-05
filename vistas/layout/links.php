@@ -17,14 +17,14 @@
     <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
 
     <style>
-        #photosphere { height:500px; width:100%; margin: 0 auto; }
+        #photosphere { height:460px; width:100%; margin: 0 auto; }
         @media (max-width:1024px){
-            #photosphere { height:350px; width:100%; margin: 0 auto; }
+            #photosphere { height:310px; width:100%; margin: 0 auto; }
         }
         @media (max-width:750px){
-            #photosphere { height:250px; width:100%; margin: 0 auto; }
+            #photosphere { height:210px; width:100%; margin: 0 auto; }
         }
         @media (max-height:720px){
-            #photosphere { height:150px; width:100%; margin: 0 auto; }
+            #photosphere { height:155px; width:100%; margin: 0 auto; }
         }
     </style>
