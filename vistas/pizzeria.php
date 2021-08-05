@@ -72,7 +72,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/Imagenes 360/PIZZERIA/1.jpg',
+        panorama: '../public/imagenes/Imagenes 360/PIZZERIA/1.webp',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,

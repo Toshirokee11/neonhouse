@@ -70,7 +70,7 @@
     <script>
     // 360 viewer
     var PSV = new PhotoSphereViewer({
-        panorama: '../public/imagenes/Imagenes 360/SALON SPA Y BARBERIA/4.jpg',
+        panorama: '../public/imagenes/Imagenes 360/SALON SPA Y BARBERIA/4.webp',
         container: 'photosphere',
         navbar: 'fullscreen',
         default_fov: 65,
