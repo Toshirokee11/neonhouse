@@ -7,6 +7,10 @@ class Usuario{
     protected $username;
     protected $password;   
     protected $user_level;
+
+    //Nuevo campo estado de usuario (deshabilitado/habilitado)
+    protected $status;
+
     protected $nombres;
     protected $telefono;
 
@@ -36,7 +40,7 @@ class Usuario{
     protected function listUser()
     {
         $ic = new Conexion();
-        $sql = "SELECT * FROM users WHERE status= 1";
+        $sql = "SELECT * FROM users";
         $consulta = $ic->db->prepare($sql);
         $consulta->execute();
         $objetoConsulta = $consulta->fetchAll(PDO::FETCH_OBJ);
@@ -49,7 +53,7 @@ class Usuario{
     {
         $ic = new Conexion();
         
-        $sql = "INSERT INTO users(username,password,user_level,nombres,telefono) VALUES(?,?,?,?,?)";
+        $sql = "INSERT INTO users(username,password,user_level,status,nombres,telefono) VALUES(?,?,?,default,?,?)";
         $insertar = $ic->db->prepare($sql);
         $insertar->bindParam(1, $this->username);
         $insertar->bindParam(2, $this->password);
@@ -68,6 +72,8 @@ class Usuario{
         $insertar = $ic->db->prepare($sql);
         return $insertar->execute();
     }
+
+    
 
     protected function userdelete()
     {
@@ -152,6 +158,18 @@ class Usuario{
         }
            
 
+    }
+
+
+    /***
+     * Metodo para cambiar estado de usuario deshabilitado/habilitado
+     */
+    protected function changeStatus()
+    {
+        $ic = new Conexion();
+        $sql = "UPDATE users SET status = '$this->status' WHERE id='$this->id'";
+        $insertar = $ic->db->prepare($sql);
+        return $insertar->execute();
     }
 
 

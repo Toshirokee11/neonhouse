@@ -52,6 +52,7 @@ require_once "layout/header.php";
                                     <th class="tabla__celda">Nivel de usuario</th>
                                     <th class="tabla__celda">Editar</th>
                                     <th class="tabla__celda">Eliminar</th>
+                                    <th class="tabla__celda">Estado</th>
                                 </tr>
                             </thead>                      
                                 
@@ -90,6 +91,7 @@ require_once "layout/header.php";
                             <option value="3">Gestion</option>
                         </select>                    
                 </div>
+                
                 <div class="form-group">
                 <label for="name" class="col-form-label">Nombres</label>
                 <input type="text" class="form-control" id="name" required>

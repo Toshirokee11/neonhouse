@@ -28,11 +28,18 @@ class UserController extends Usuario {
             if($usuario->username == $username){
                 if($passha == $usuario->password){
 
-                    $_SESSION['username'] = $usuario->username;
-                    $_SESSION['nombres'] = $usuario->nombres;
-                    $_SESSION['rol'] = $usuario->user_level;
 
-                    echo 1;
+                    // Verificacion si usuario esta habilitado para ingresar 
+                    if($usuario->status == true){
+                        $_SESSION['username'] = $usuario->username;
+                        $_SESSION['nombres'] = $usuario->nombres;
+                        $_SESSION['rol'] = $usuario->user_level;
+                        echo 1;
+                    }else{
+                        echo 0;
+                    }
+                    
+                    
                 }
                 else{
                     echo 0;
@@ -189,6 +196,12 @@ class UserController extends Usuario {
 
     }
 
+    public function changeUserStatus($id,$status){
+        $this->id = $id;
+        $this->status = $status;
+        $results = $this->changeStatus();
+        echo $results;
+    }
 
 
 }
@@ -267,7 +280,8 @@ if(isset($_GET['action']) && $_GET['action']=='listgallery')
 if(isset($_POST['action']) && $_POST['action']=='deletegallery')
 {
     $instanciaController = new UserController();
-    $eliminarimage = "../imgGallery/" . $_POST['nameimage'];
+
+    $eliminarimage = $_SERVER["DOCUMENT_ROOT"]."/neonhouseled/admin/imgGallery/" . $_POST['nameimage'];
     unlink($eliminarimage);
 
     $id = intval($_POST['id']);
@@ -289,6 +303,15 @@ if(isset($_GET['action']) && $_GET['action']=='showGalleryForAll')
 
 }
 
-
-
-?>
+if(isset($_POST['action']) && $_POST['action']=='changeStatusForUser'){
+    
+    $id = $_POST['id'];
+    $status = $_POST['user_status'];
+    $instanciaController = new UserController();
+    if(isset($status) && $status=='1'){
+        $status=1;
+    }else{
+        $status=0;
+    }
+    $instanciaController->changeUserStatus($id,$status);
+}
